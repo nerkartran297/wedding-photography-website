@@ -3368,7 +3368,7 @@ aside table caption,
 }
 
 .el-smalltitle {
-	color: rgb(255, 183, 183);
+	color: rgb(249, 151, 151);
 	margin-bottom: 15px;
 }
 
@@ -3889,7 +3889,7 @@ textarea {
 	font-weight: 700;
 	color: #ffffff;
 	/* background: #4A7D6D; */
-	background: rgb(251, 191, 196);
+	background: rgb(255, 122, 131);
 	padding: 10px 25px;
 	display: inline-block;
 	border: none;
@@ -3959,7 +3959,7 @@ textarea {
 .el-btn .elementor-button.elementor-size-md:hover,
 .el-btn .elementor-button.elementor-size-sm:hover {
 	color: #fff;
-	background: rgb(255, 122, 131);
+	background: rgb(255, 110, 119);
 	box-shadow: 0 5px 20px rgba(74, 125, 109, 0.3);
 }
 
@@ -4149,6 +4149,28 @@ textarea {
 	right: 20px;
 	text-align: center;
 	padding-top: 7px;
+	cursor: pointer;
+	z-index: 110;
+}
+
+.langua {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.langua a {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	background: rgb(55, 130, 251);
+	color: #ffffff;
+	border-radius: 50%;
+	font-weight: bold;
+	bottom: 20px;
+	left: 20px;
+	text-align: center;
+	padding-top: 12px;
 	cursor: pointer;
 	z-index: 110;
 }
@@ -6337,4 +6359,76 @@ body {
 
 #home-section-2-1 {
 	margin-bottom: 0px;
+}
+
+.slide-in {
+	opacity: 0;
+	transform: translateX(-50%);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-in.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.slide-in-right {
+	opacity: 0;
+	transform: translateX(50%);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-in-right.active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* ------------------- */
+
+#hearts-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	/* Cho phép click xuyên qua trái tim */
+	z-index: 1000;
+	/* Đảm bảo trái tim hiển thị trên các phần tử khác */
+}
+
+.heart {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: rgb(223, 58, 58);
+	transform: rotate(45deg);
+	animation: fall 3s linear forwards;
+}
+
+.heart:before,
+.heart:after {
+	width: 16px;
+	height: 16px;
+	content: '';
+	position: absolute;
+	background-color: rgb(223, 58, 58);
+	border-radius: 50%;
+}
+
+.heart:before {
+	top: -8px;
+	left: 0;
+}
+
+.heart:after {
+	top: 0;
+	left: -8px;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(100vh);
+		opacity: 0;
+	}
 }
