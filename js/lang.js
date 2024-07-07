@@ -120,16 +120,16 @@ const heartsContainer = document.getElementById('hearts-container');
 function createHeart() {
     const heart = document.createElement('div');
     heart.classList.add('heart');
-    heart.style.left = Math.random() * 100 + 'vw'; /* Vị trí ngẫu nhiên theo chiều ngang */
-    heart.style.animationDuration = Math.random() * 2 + 3 + 's'; /* Thời gian rơi ngẫu nhiên */
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 2 + 3 + 's';
     heartsContainer.appendChild(heart);
 
     setTimeout(() => {
         heart.remove();
-    }, 5000); /* Xóa trái tim sau 5 giây */
+    }, 5000);
 }
 
-setInterval(createHeart, 300); /* Tạo trái tim mới sau mỗi 300ms */
+setInterval(createHeart, 300);
 
 
 
