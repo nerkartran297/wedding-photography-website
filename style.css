@@ -78,6 +78,11 @@ https://matchthemes.com
 
 /* RESET STYLES */
 
+@font-face {
+	font-family: "Edwardian";
+	src: url(./fonts/Edwardian.TTF);
+}
+
 *,
 html,
 body,
@@ -3371,17 +3376,17 @@ aside table caption,
 }
 
 .el-smalltitle {
+	font-size: 1.3rem;
 	color: rgb(249, 151, 151);
 	margin-bottom: 15px;
+	font-weight: 600;
 }
 
 .el-subtitle {
 	margin-bottom: 0;
 }
 
-
 .widgettitle:after,
-.el-smalltitle:after,
 .el-subtitle:after {
 	content: '';
 	position: relative;
@@ -3390,6 +3395,18 @@ aside table caption,
 	height: 4px;
 	display: block;
 	margin-top: 10px;
+	-webkit-mask-image: url(images/divider-1.svg);
+	mask-image: url(images/divider-1.svg);
+}
+
+.el-smalltitle:after {
+	content: '';
+	position: relative;
+	width: 100%;
+	background-color: rgb(255, 183, 183);
+	height: 4px;
+	display: block;
+	margin-top: 0px;
 	-webkit-mask-image: url(images/divider-1.svg);
 	mask-image: url(images/divider-1.svg);
 }

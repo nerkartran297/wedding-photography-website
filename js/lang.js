@@ -29,17 +29,17 @@ function render() {
         document.querySelector('.langbtn').textContent = "EN";
 
         if (At && Ac) {
-            At.textContent = "VỀ CHÚNG TÔI";
+            At.textContent = "Về chúng tôi";
             Ac.textContent = "Với nhiều năm kinh nghiệm trong vai trò Chuyên gia hôn lễ và tổ chức sự kiện tại Việt Nam. Cùng đội ngũ chuyên nghiệp, tận tâm, đầy đam mê và nhiệt huyết, chúng tôi luôn sẵn sàng đồng hành và lắng nghe mọi nguyện vọng của mỗi vị khách trong từng sự kiện quan trọng của cuộc đời, nhằm đem đến những trải nghiệm hoàn hảo nhất và trọn vẹn nhất.";
-            Wt.textContent = "WEDDING PLANNING";
+            Wt.textContent = "Wedding Planning";
             Wc.innerHTML = `Ngày trọng đại của cuộc đời, chắc hẳn các cặp đôi đều muốn mọi khoảnh khắc đều hoàn hảo. Tuy nhiên có rất nhiều nỗi lo từ địa điểm tổ chức, trang phục, trang trí tiệc cưới, điều phối trong suốt thời gian cử hành hôn lễ, khách mời....và quan trọng hơn hết là vấn đề chi phí.  
             <br><br>
             Thấu hiểu nỗi lo đó, Loveland sẽ là người bạn đáng tin cậy đồng hành cùng Cô dâu – Chú rể trong suốt quá trình từ khâu lên ý tưởng đến khi hoàn thành hôn lễ. `;
-            Et.textContent = "TỔ CHỨC SỰ KIỆN";
+            Et.textContent = "Tổ chức sự kiện";
             Ec.innerHTML = `LOVELAND cung cấp đa dạng các gói dịch vụ và đáp ứng mọi nhu cầu của khách hàng với cam kết mang lại cho khách hàng sự hài lòng, trải nghiệm ấn tượng. 
             <br><br>
             Với nguồn lực chất lượng, năng động, sáng tạo và chuyên nghiệp cho phép chúng tôi đồng hành cùng khách hàng trong mọi giai đoạn của sự kiện.`;
-            Tt.textContent = "TOUR";
+            Tt.textContent = "Tour";
             Tc.innerHTML = `
             Bạn đang cần “Chữa lành” cho tâm hồn mình? <br><br>
             Bạn muốn gắn kết các cá nhân lại với nhau thông qua những chuyến đi? <br><br>
@@ -48,7 +48,7 @@ function render() {
             <br><br>
             LOVELAND luôn lắng nghe mọi nhu cầu của bạn và cùng bạn  tạo nên những trải nghiệm tuyệt vời nhất.`;
 
-            Mt.textContent = "MICE";
+            Mt.textContent = "Mice";
             Mc.innerHTML = `Là sự kết hợp giữ du lịch và sự kiện, MICE không còn quá xa lạ đối với mọi người. <br><br>
             Với kinh nghiệm trong ngành du lịch cũng như tổ chức các sự kiện, chúng tôi đảm bảo sẽ mang đến cho đói tác của mình sự hài lòng, chuyên nghiệp và hoàn mỹ. `;
             document.querySelector('.guitn').value = "Liên hệ ngay";
@@ -74,19 +74,19 @@ function render() {
         document.querySelector('.langbtn').textContent = "VI";
 
         if (At && Ac) {
-            At.textContent = "ABOUT US";
+            At.textContent = "About Us";
             Ac.textContent = "With many years of experience as a Wedding Planner and Event Organizer in Vietnam. With a professional, dedicated, passionate, and enthusiastic team, we are always ready to accompany and listen to the wishes of each guest in every important event of their life, aiming to bring the most perfect and complete experiences.";
 
-            Wt.textContent = "WEDDING PLANNING";
+            Wt.textContent = "Wedding Planning";
             Wc.innerHTML = `Your special day deserves nothing less than perfection. Loveland is here to take the stress out of wedding planning, from crafting unique concepts and selecting the perfect venue to creating stunning decor and providing seamless coordination throughout your celebration. We are committed to delivering a flawless wedding that reflects your individual style and love story.`;
 
-            Et.textContent = "EVENTS";
+            Et.textContent = "Events";
             Ec.innerHTML = `Loveland is confident in delivering impactful and successful events that cater to your specific needs. Whether it's a conference, seminar, exhibition, anniversary celebration, or entertainment event, we have the comprehensive and creative solutions you're looking for. Our professionalism, dedication, and expertise will help you make a lasting impression on your guests.`;
 
-            Tt.textContent = "TOURS";
+            Tt.textContent = "Tours";
             Tc.innerHTML = `Looking to explore new destinations and create unforgettable memories with your loved ones? Let Loveland be your guide. We design unique itineraries that blend cultural immersion, culinary delights, and local experiences, ensuring you have a truly memorable and relaxing getaway.`;
 
-            Mt.textContent = "MICE";
+            Mt.textContent = "Mice";
             Mc.innerHTML = `Loveland is a trusted partner for businesses seeking professional and effective MICE solutions. With extensive experience and a vast network of partners, we provide comprehensive services, from planning and organization to logistics, helping businesses achieve their marketing and business goals.`;
             document.querySelector('.guitn').value = "Send message";
         }
