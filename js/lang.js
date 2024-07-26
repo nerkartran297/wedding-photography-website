@@ -56,10 +56,10 @@ function render() {
 
 
 
-        document.querySelector('.nA').textContent = "Về chúng tôi";
-        document.querySelector('.nH').textContent = "Trang chủ";
-        document.querySelector('.nC').textContent = "Liên hệ";
-        document.querySelector('.nT').textContent = "Thuê đồ trang trí";
+        document.querySelector('.nA').textContent = "VỀ CHÚNG TÔI";
+        document.querySelector('.nH').textContent = "TRANG CHỦ";
+        document.querySelector('.nC').textContent = "LIÊN HỆ";
+        document.querySelector('.nT').textContent = "THUÊ ĐỒ TRANG TRÍ";
         document.querySelector('.nmA').textContent = "Về chúng tôi";
         document.querySelector('.nmH').textContent = "Trang chủ";
         document.querySelector('.nmC').textContent = "Liên hệ";
@@ -91,13 +91,13 @@ function render() {
             document.querySelector('.guitn').value = "Send message";
         }
 
-        document.querySelector('.nA').textContent = "About Us";
-        document.querySelector('.nH').textContent = "Home";
-        document.querySelector('.nC').textContent = "Contact";
+        document.querySelector('.nA').textContent = "ABOUT US";
+        document.querySelector('.nH').textContent = "HOME";
+        document.querySelector('.nC').textContent = "CONTACT";
         document.querySelector('.nmA').textContent = "About Us";
         document.querySelector('.nmH').textContent = "Home";
         document.querySelector('.nmC').textContent = "Contact";
-        document.querySelector('.nT').textContent = "Decoration Rental";
+        document.querySelector('.nT').textContent = "DECORATION RENTAL";
         document.querySelector('.lienhe').textContent = "Book now";
         document.querySelector('.cf').textContent = "Contact Us";
         document.querySelector('.aftitle').textContent = "About Us";

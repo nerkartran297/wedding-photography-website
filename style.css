@@ -1440,7 +1440,7 @@ a.social-skype:hover {
 
 .slider-img:before {
 	content: '';
-	background: rgba(38, 58, 52, 0.5);
+	/* background: rgba(38, 58, 52, 0.1); */
 	top: 0;
 	position: absolute;
 	left: 0;
@@ -5158,7 +5158,7 @@ body.hidden-scroll {
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-	opacity: .35;
+	opacity: 0.35;
 	cursor: auto;
 	pointer-events: none
 }
@@ -5260,7 +5260,7 @@ body.hidden-scroll {
 	height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
 	display: inline-block;
 	border-radius: 50%;
-	background: var(--swiper-pagination-bullet-inactive-color, #000);
+	background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
 	opacity: var(--swiper-pagination-bullet-inactive-opacity, .2)
 }
 
