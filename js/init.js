@@ -2,6 +2,11 @@
  * Author: matchthemes.com
  *
 */
+const navElements = document.querySelectorAll('.menu-nav');
+
+navElements.forEach(navElement => {
+	navElement.style.display = 'none';
+});
 
 (function ($) {
 	"use strict";
@@ -145,10 +150,19 @@
 	$(window).on('scroll', function () {
 		if ($(document).scrollTop() > 1) {
 			$('.main-header').addClass('nav-fixed-top');
+			const navElements = document.querySelectorAll('.menu-nav');
+
+			navElements.forEach(navElement => {
+				navElement.style.display = 'block';
+			});
 		} else {
 			$('.main-header').removeClass('nav-fixed-top');
-		}
+			const navElements = document.querySelectorAll('.menu-nav');
 
+			navElements.forEach(navElement => {
+				navElement.style.display = 'none';
+			});
+		}
 	});
 
 

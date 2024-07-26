@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -155,7 +157,10 @@
     </div>
     <!-- /MOBILE MENU HOLDER -->
     <!-- HEADER -->
-    <header class="main-header header-5">
+    <div style="min-width: 100vw; height: 70px; background-color: black">
+        
+    </div>
+    <header class="main-header header-5 hide-data" style="padding-top: 10px;padding-bottom: 10px;">
       <div class="container">
         <div class="top-header top-header-5">
           <div class="header-social header-social-5">
@@ -183,39 +188,17 @@
               </li>
             </ul>
           </div>
-          <div class="logo logo-5 logo-white">
-            <a href="index.html">
-              <!-- <img
+          <div class="logo logo-5 logo-white" style="width: 200px; display: flex; justify-content: center;">
+            <a href="index.html" style="width: 200px; display: flex; justify-content: center;">
+              <img
                 class="img-fluid"
-                src="images/logo-tilia.png"
+                src="images/logo-loveland2.png"
                 alt="Tilia"
-                width="139"
-                height="90"
-              /> -->
-              <p
-                class="display-2"
-                style="
-                  font-family: 'Candlescript Demo Version';
-                  font-size: 3rem;
-                  color: white;
-                  margin-bottom: 0px;
-                  margin-top: 10px;
-                  text-align: center;
-                "
-              >
-                Loveland
-              </p>
+                width="350"
+                height="200"
+                style="width: 200px; display: flex; justify-content: center;"
+              />
             </a>
-          </div>
-          <div class="logo logo-5 logo-dark">
-            <a href="index.html"
-              ><img
-                class="img-fluid"
-                src="images/logo-dark-tilia.png"
-                alt="Tilia"
-                width="139"
-                height="90"
-            /></a>
           </div>
           <div class="btn-header btn-header-5">
             <a href="#contact" class="read-more lienhe">Book Now</a>
@@ -278,31 +261,32 @@
           <!-- /mobile menu button -->
         </div>
         <!-- /top-header -->
+        <!-- <div class="main-header header-5 nav-fixed-top"> -->
         <div class="header-container5">
           <nav class="nav-holder nav-holder-5">
             <ul class="menu-nav">
-              <li class="menu-item menu-item-has-children current-menu-item">
+              <li class="menu-item menu-item-has-children current-menu-item navnav">
                 <a class="nH" href="#">Home</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a class="nA" href="#aboutus">About Us</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a href="#weddingplanner">Wedding Planning</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a href="#event">Events</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a href="#mice">Mice</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a href="#tour">Tours</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a class="nC" href="#contact">Contact</a>
               </li>
-              <li class="menu-item menu-item-has-children">
+              <li class="menu-item menu-item-has-children navnav">
                 <a class="nT" href="#">Decoration Rental</a>
                 <ul class="sub-menu">
                   <li class="menu-item"><a href="rent1.html">Cổng</a></li>
@@ -317,130 +301,82 @@
       </div>
     </header>
     <!-- /HEADER -->
-    <!-- HOME SLIDER -->
+
+    <!-- <div class="video-container">
+      <video
+        id="video"
+        class="video"
+        preload="metadata"
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+        poster="images/home/video-img.jpg"
+      >
+        <source
+          src="./videos/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="slider-caption">
+        <div class="slider-text">
+          <h1 class="display-2"></h1>
+        </div>
+      </div>
+    </div> -->
+
     <div class="swiper-mt">
-      <div class="swiper-wrapper">
-        <div
-          class="swiper-slide slider-img"
-          style="background-image: url('images/home/slider-1.jpg')"
-        >
-          <div class="container slider-caption">
-            <div class="slider-text">
-              <h1 class="display-2">Wedding Planning</h1>
-              <!-- <span class="post-subtitle">Ancillae torquatos in nec, impetus nostrum ea eos.</span> -->
-            </div>
-          </div>
-        </div>
-        <!-- /slider-img -->
-        <div
-          class="swiper-slide slider-img"
-          style="background-image: url('images/home/slider-2.jpg')"
-        >
-          <div class="container slider-caption">
-            <div class="slider-text">
-              <h1 class="display-2">MICE</h1>
-              <!-- <span class="post-subtitle"> Modo detracto appareat qui te.</span> -->
-            </div>
-          </div>
-        </div>
-        <!-- /slider-img -->
-        <div
-          class="swiper-slide slider-img"
-          style="background-image: url('images/home/slider-3.jpg')"
-        >
-          <div class="container slider-caption">
-            <div class="slider-text">
-              <h1 class="display-2">Tour</h1>
-              <!-- <span class="post-subtitle">Propriae voluptaria dissentias nam ei.</span> -->
-            </div>
-          </div>
-        </div>
-        <!-- /slider-img -->
-        <div
-          class="swiper-slide slider-img"
-          style="background-image: url('images/home/slider-4.jpg')"
-        >
-          <div class="container slider-caption">
-            <div class="slider-text">
-              <h1 class="display-2">Wedding Photography</h1>
-              <!-- <span class="post-subtitle">Propriae voluptaria dissentias nam ei.</span> -->
-            </div>
-          </div>
-        </div>
-        <!-- /slider-img -->
-        <div
-          class="swiper-slide slider-img"
-          style="background-image: url('images/home/slider-5.jpg')"
-        >
-          <div class="container slider-caption">
-            <div class="slider-text">
-              <h1 class="display-2">Wedding</h1>
-              <!-- <span class="post-subtitle">Propriae voluptaria dissentias nam ei.</span> -->
-            </div>
-          </div>
-        </div>
-        <!-- /slider-img -->
-      </div>
-      <!-- /swiper-wrapper -->
-      <div
-        class="swiper-mt-button-prev"
-        tabindex="0"
-        role="button"
-        aria-label="Previous slide"
-      >
-        <svg
-          version="1.1"
-          class="arrow-slider"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 55 55"
-          style="enable-background: new 0 0 55 55"
-          xml:space="preserve"
-        >
-          <path
-            d="M33.2,28.3l-8.8,8.8c-0.4,0.4-1.1,0.4-1.5,0l-1-1c-0.4-0.4-0.4-1.1,0-1.5l7-7l-7-7c-0.4-0.4-0.4-1.1,0-1.5l1-1
-                c0.4-0.4,1.1-0.4,1.5,0l8.8,8.8C33.6,27.2,33.6,27.8,33.2,28.3z"
-          ></path>
-          <path
-            d="M27.5,55C12.3,55,0,42.7,0,27.5S12.3,0,27.5,0S55,12.3,55,27.5S42.7,55,27.5,55z M27.5,5C15.1,5,5,15.1,5,27.5
-                S15.1,50,27.5,50S50,39.9,50,27.5S39.9,5,27.5,5z"
-          ></path>
-        </svg>
-      </div>
-      <!-- /swiper-mt-button-prev -->
-      <div
-        class="swiper-mt-button-next"
-        tabindex="0"
-        role="button"
-        aria-label="Next slide"
-      >
-        <svg
-          version="1.1"
-          class="arrow-slider"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 55 55"
-          style="enable-background: new 0 0 55 55"
-          xml:space="preserve"
-        >
-          <path
-            d="M33.2,28.3l-8.8,8.8c-0.4,0.4-1.1,0.4-1.5,0l-1-1c-0.4-0.4-0.4-1.1,0-1.5l7-7l-7-7c-0.4-0.4-0.4-1.1,0-1.5l1-1
-                c0.4-0.4,1.1-0.4,1.5,0l8.8,8.8C33.6,27.2,33.6,27.8,33.2,28.3z"
-          ></path>
-          <path
-            d="M27.5,55C12.3,55,0,42.7,0,27.5S12.3,0,27.5,0S55,12.3,55,27.5S42.7,55,27.5,55z M27.5,5C15.1,5,5,15.1,5,27.5
-                S15.1,50,27.5,50S50,39.9,50,27.5S39.9,5,27.5,5z"
-          ></path>
-        </svg>
-      </div>
-      <!-- /swiper-mt-button-next -->
-    </div>
-    <!-- /swiper-mt -->
-    <!-- /HOME SLIDER -->
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider-img" style="background-image: url('images/home/slider-1.jpg');">
+					<div class="container slider-caption">
+						<div class="slider-text">
+							<h1 class="display-2">Wedding Photography</h1>
+							<span class="post-subtitle"> Ancillae torquatos in nec, impetus nostrum ea eos.</span> <a href="#" class="read-more white-btn">Find More</a>
+						</div>
+					</div>
+				</div>
+				<!-- /slider-img -->
+				<div class="swiper-slide slider-img" style="background-image: url('images/home/slider-2.jpg');">
+					<div class="container slider-caption">
+						<div class="slider-text">
+							<h1 class="display-2">Timeless Locations</h1>
+							<span class="post-subtitle"> Modo detracto appareat qui te.</span> <a href="#" class="read-more white-btn">Find More</a>
+						</div>
+					</div>
+				</div>
+				<!-- /slider-img -->
+				<div class="swiper-slide slider-img" style="background-image: url('images/home/slider-3.jpg');">
+					<div class="container slider-caption">
+						<div class="slider-text">
+							<h1 class="display-2">Family Portraits</h1>
+							<span class="post-subtitle"> Propriae voluptaria dissentias nam ei.</span> <a href="#" class="read-more white-btn">Find More</a>
+						</div>
+					</div>
+				</div>
+				<!-- /slider-img -->
+			</div>
+			<!-- /swiper-wrapper -->
+			<div class="swiper-mt-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+				<svg version="1.1" class="arrow-slider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve">
+					<path d="M33.2,28.3l-8.8,8.8c-0.4,0.4-1.1,0.4-1.5,0l-1-1c-0.4-0.4-0.4-1.1,0-1.5l7-7l-7-7c-0.4-0.4-0.4-1.1,0-1.5l1-1
+						c0.4-0.4,1.1-0.4,1.5,0l8.8,8.8C33.6,27.2,33.6,27.8,33.2,28.3z"></path>
+					<path d="M27.5,55C12.3,55,0,42.7,0,27.5S12.3,0,27.5,0S55,12.3,55,27.5S42.7,55,27.5,55z M27.5,5C15.1,5,5,15.1,5,27.5
+						S15.1,50,27.5,50S50,39.9,50,27.5S39.9,5,27.5,5z"></path>
+				</svg>
+			</div>
+			<!-- /swiper-mt-button-prev -->
+			<div class="swiper-mt-button-next" tabindex="0" role="button" aria-label="Next slide">
+				<svg version="1.1" class="arrow-slider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve">
+					<path d="M33.2,28.3l-8.8,8.8c-0.4,0.4-1.1,0.4-1.5,0l-1-1c-0.4-0.4-0.4-1.1,0-1.5l7-7l-7-7c-0.4-0.4-0.4-1.1,0-1.5l1-1
+						c0.4-0.4,1.1-0.4,1.5,0l8.8,8.8C33.6,27.2,33.6,27.8,33.2,28.3z"></path>
+					<path d="M27.5,55C12.3,55,0,42.7,0,27.5S12.3,0,27.5,0S55,12.3,55,27.5S42.7,55,27.5,55z M27.5,5C15.1,5,5,15.1,5,27.5
+						S15.1,50,27.5,50S50,39.9,50,27.5S39.9,5,27.5,5z"></path>
+				</svg>
+			</div>
+			<!-- /swiper-mt-button-next -->
+		</div>
+    <!-- /HOME VIDEO -->
+    
     <!-- WRAP CONTENT -->
     <div id="wrap-content" class="page-content custom-page-template">
       <!-- SECTION 1 -->
@@ -452,50 +388,16 @@
           <div class="container">
             <div class="row" style="align-items: center">
               <div class="col-lg-6 order-mobi2">
-                <div class="margin-r50">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img
-                        class="img-fluid radius10 margin-b30"
-                        src="images/home/home2-img1.jpg"
-                        alt=" "
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        class="img-fluid radius10 margin-b30"
-                        src="images/home/home2-img2.jpg"
-                        alt=" "
-                      />
-                    </div>
-                    <!-- /col-md-6 -->
-                    <div class="col-md-6">
-                      <img
-                        class="img-fluid radius10 margin-b30"
-                        src="images/home/home2-img3.jpg"
-                        alt=" "
-                      />
-                    </div>
-
-                    <div class="col-md-6">
-                      <img
-                        class="img-fluid radius10 margin-b30"
-                        src="images/home/home2-img4.jpg"
-                        alt=" "
-                      />
-                    </div>
-                  </div>
-                  <!-- /row -->
-                  <!-- /col-md-6 -->
+                <div class="margin-r50" style="display: flex; justify-content: center; align-items: center;">
+                  <iframe style="border-radius: 10px" width="560" height="315" src="https://www.youtube.com/embed/rIXhXaQ8tiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <!-- /margin-r50 -->
               </div>
               <!-- /col-lg-6 -->
               <div class="col-lg-6 order-mobi1 margin-bm50">
                 <div class="aboutusTitle el-smalltitle">ABOUT US</div>
                 <p
                   class="aboutusContent"
-                  style="font-size: 1.1rem; text-align: justify"
+                  style="font-size: 1.1rem; text-align: justify; font-weight: 500;"
                 ></p>
               </div>
               <!-- /col-lg-6 -->
@@ -772,7 +674,7 @@
                 </h2> -->
                 <p
                   class="weddingContent"
-                  style="font-size: 1.1rem; text-align: justify"
+                  style="font-size: 1.1rem; text-align: justify; font-weight: 500;"
                 ></p>
               </div>
               <!-- /col-lg-6 -->
@@ -794,7 +696,7 @@
                 <!-- <h2 class="display-4 margin-b30">What We Can Do for You</h2> -->
                 <p
                   class="eventContent"
-                  style="font-size: 1.1rem; text-align: justify"
+                  style="font-size: 1.1rem; text-align: justify; font-weight: 500;"
                 ></p>
               </div>
               <!-- /col-lg-6 -->
@@ -835,7 +737,7 @@
                 <!-- <h2 class="display-4 margin-b30">Our Core Values</h2> -->
                 <p
                   class="miceContent"
-                  style="font-size: 1.1rem; text-align: justify"
+                  style="font-size: 1.1rem; text-align: justify; font-weight: 500;"
                 ></p>
               </div>
               <!-- /col-lg-6 -->
@@ -856,7 +758,7 @@
                 <!-- <h2 class="display-4 margin-b30">What We Can Do for You</h2> -->
                 <p
                   class="tourContent"
-                  style="font-size: 1.1rem; text-align: justify"
+                  style="font-size: 1.1rem; text-align: justify; font-weight: 500;"
                 ></p>
               </div>
               <!-- /col-lg-6 -->
