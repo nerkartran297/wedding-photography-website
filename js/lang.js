@@ -13,6 +13,8 @@ const Tc = document.querySelector('.tourContent');
 const Mt = document.querySelector('.miceTitle');
 const Mc = document.querySelector('.miceContent');
 
+const ds = document.querySelector('.dessub');
+
 const langBTN = document.querySelector('.langua');
 
 let lang = true; // true = Vietnamese / false = English
@@ -41,17 +43,14 @@ function render() {
             Với nguồn lực chất lượng, năng động, sáng tạo và chuyên nghiệp cho phép chúng tôi đồng hành cùng khách hàng trong mọi giai đoạn của sự kiện.`;
             Tt.textContent = "Tour";
             Tc.innerHTML = `
-            Bạn đang cần “Chữa lành” cho tâm hồn mình? <br><br>
-            Bạn muốn gắn kết các cá nhân lại với nhau thông qua những chuyến đi? <br><br>
-            Bạn muốn khám phá một địa điểm mới? <br><br>
-            Nhưng bạn lại không có quá nhiều thời gian để lên kế hoạch cho chuyến đi, cũng như sắp xếp chu toàn hành trình cho mọi người? 
-            <br><br>
-            LOVELAND luôn lắng nghe mọi nhu cầu của bạn và cùng bạn  tạo nên những trải nghiệm tuyệt vời nhất.`;
+Khắp Việt Nam là những điểm đến đặc biệt đẹp đẽ với di sản phong phú và phong cảnh ngoạn mục, từ vùng trung du Bắc Bộ đến những bãi biển ở Nam Bộ. Đắm mình trong vẻ đẹp quyến rũ vượt thời gian của Hà Nội, khám phá sự huyền bí của Vịnh Hạ Long và dạo quanh những con phố nhộn nhịp của Thành phố Hồ Chí Minh. Khám phá Việt Nam với hành trình được cá nhân hóa phù hợp với sở thích của bạn từ các chuyên gia du lịch tại LOVELAND DMC.`;
 
             Mt.textContent = "Mice";
             Mc.innerHTML = `Là sự kết hợp giữ du lịch và sự kiện, MICE không còn quá xa lạ đối với mọi người. <br><br>
             Với kinh nghiệm trong ngành du lịch cũng như tổ chức các sự kiện, chúng tôi đảm bảo sẽ mang đến cho đói tác của mình sự hài lòng, chuyên nghiệp và hoàn mỹ. `;
             document.querySelector('.guitn').value = "Liên hệ ngay";
+
+            ds.textContent = "Chúng tôi rất vui mừng được chào đón tất cả các bạn đến đây và chiêm ngưỡng những cảnh quan tuyệt đẹp của Việt Nam, thả hồn trên những bãi biển cát trắng, trải nghiệm nền văn hóa tươi đẹp độc đáo của chúng tôi và gặp gỡ những con người ở đất nước thân thiện nhất. Đặc biệt, để thưởng thức ẩm thực hảo hạng của chúng tôi tại các nhà hàng được xếp hạng Michelin hoặc tham gia cùng chúng tôi trong các sự kiện văn hóa, âm nhạc, thể thao và du lịch nổi bật!";
         }
 
 
@@ -84,11 +83,13 @@ function render() {
             Ec.innerHTML = `Loveland is confident in delivering impactful and successful events that cater to your specific needs. Whether it's a conference, seminar, exhibition, anniversary celebration, or entertainment event, we have the comprehensive and creative solutions you're looking for. Our professionalism, dedication, and expertise will help you make a lasting impression on your guests.`;
 
             Tt.textContent = "Tours";
-            Tc.innerHTML = `Looking to explore new destinations and create unforgettable memories with your loved ones? Let Loveland be your guide. We design unique itineraries that blend cultural immersion, culinary delights, and local experiences, ensuring you have a truly memorable and relaxing getaway.`;
+            Tc.innerHTML = `Vietnam offers extraordinary journeys with its rich heritage and breathtaking landscapes from the Northernmost mountains to the Southernmost beaches. Immerse yourself in the timeless charm of Hanoi, cruise along the mystical Halong Bay, and explore the bustling streets of Ho Chi Minh City. Explore Vietnam with personalised itineraries tailored to your interests from travel experts at LOVELAND DMC.`;
 
             Mt.textContent = "Mice";
             Mc.innerHTML = `Loveland is a trusted partner for businesses seeking professional and effective MICE solutions. With extensive experience and a vast network of partners, we provide comprehensive services, from planning and organization to logistics, helping businesses achieve their marketing and business goals.`;
             document.querySelector('.guitn').value = "Send message";
+
+            ds.textContent = "We are more than happy to welcome you all here and admire Vietnam stunning landscapes, free your soul on white sandy beaches, experience our unique and beautiful culture and meet the people in the most friendly country. Particularly, to indulge in our scrumptious cuisine at Michelin rated restaurants or to join us in outstanding mega culture, music, sports and tourism events!";
         }
 
         document.querySelector('.nA').textContent = "ABOUT US";
